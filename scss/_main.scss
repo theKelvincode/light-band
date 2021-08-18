@@ -29,16 +29,16 @@
     margin-top: 50px;
   }
 
-  button {
-    display: inline-block;
-    background-color: $primaryColor;
-    color: $wh;
-    border: none;
-    padding: 0.625rem;
-    font-size: 0.9375rem;
-    cursor: pointer;
-    border-radius: 3.125rem;
-  }
+  // button {
+  //   display: inline-block;
+  //   background-color: $primaryColor;
+  //   color: $wh;
+  //   border: none;
+  //   padding: 0.625rem;
+  //   font-size: 0.9375rem;
+  //   cursor: pointer;
+  //   border-radius: 3.125rem;
+  // }
 
   button:hover {
     background-color: $l-gr;
@@ -65,6 +65,7 @@
     background-color: $wh;
     margin: auto;
     text-align: center;
+    color: $primaryColor;
   } 
 
   ul li {
