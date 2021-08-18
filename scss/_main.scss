@@ -1,0 +1,257 @@
+ html {
+    line-height: 1.5; 
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+  }
+
+  /* Global styling */
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    overflow-y: scroll;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  header img {
+    margin-top: 50px;
+  }
+
+  button {
+    display: inline-block;
+    background-color: $primaryColor;
+    color: $wh;
+    border: none;
+    padding: 0.625rem;
+    font-size: 0.9375rem;
+    cursor: pointer;
+    border-radius: 3.125rem;
+  }
+
+  button:hover {
+    background-color: $l-gr;
+    color: $primaryColor;
+  }
+
+  button {
+    display: inline-block;
+    background-color: $primaryColor;
+    color: $wh;
+    border: none;
+    padding: 0.625rem;
+    font-size: 0.9375rem;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: $l-gr;
+    color: $primaryColor;
+  }
+
+   main {
+    padding: 3.125rem 0.75rem;
+    background-color: $wh;
+    margin: auto;
+    text-align: center;
+  } 
+
+  ul li {
+    list-style: none;
+  }
+  /* the band */
+  main #the-band {
+    padding: 2.5rem 0;
+  }
+
+  main p {
+    text-align: justify;
+    padding-bottom: 1.25rem;
+  }
+
+  main hgroup h1,
+  .tour-plan h1,
+  .contact h1 {
+    font-weight: 400;
+    font-size: 30px;
+    padding-bottom: 1.2rem;
+    letter-spacing: 1.0mm;
+    text-align: center;
+  }
+
+  main hgroup h4,
+  .tour-plan h4,
+  .contact h4 {
+    font-weight: 400;
+    padding-bottom: 1.2rem;
+    opacity: 0.7;
+    text-align: center;
+  } 
+
+  /* Team Members */
+  main .team-members {
+    width: 60%;
+    margin: auto;
+    border-radius: 3px;
+  }
+
+  main .team-members figure,
+  main .team-members figcaption {
+    padding: 0.625rem;
+  } 
+
+  main #hero-c #the-band .team-members img {
+    border-radius: 0.3125rem;
+  }
+
+  /* Tour plan */
+  article.tour-plan {
+    background-color: $primaryColor;
+    color: $wh;
+    text-align: center;
+    padding: 3.125rem 0.625rem;
+  }
+
+  .tour-plan .write-up {
+    margin: 0  0 3.125rem;
+  }
+
+  .tour-plan .tour-months {
+    background-color: $wh;
+    color: $l-gr;
+    text-align: left;
+    margin: 1.25rem 0;
+  }
+
+  .tour-plan .tour-months li {
+    border-bottom: 1px solid $l-gr;
+    padding: 0.625rem;
+  }
+
+  .tour-plan .tour-months li .sold-out {
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    padding: 0.125rem 0.3125rem;
+    margin-left: 0.625rem;
+    font-weight: bold;
+  }
+
+  .tour-plan .tour-months li .number {
+    background-color: $primaryColor;
+    border-radius: 50%;
+    padding: 5px 7px;
+    font-weight: bold;
+    color: $wh;
+    margin-left: 300px;
+  }
+
+  .tour-plan .city-box {
+    background-color: $wh;
+    color: $primaryColor;
+    margin: 1.875rem auto;
+  }
+
+  .city-box .desc {
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .city-box .desc .faint {
+    opacity: 0.8;
+    margin: 0.625rem 0;
+  }
+
+  .city-box button {
+    margin-top: 0.9375rem;
+  }
+
+  .city-box img:hover {
+    opacity: 0.5; 
+  } 
+
+  /* Contact Styling */
+  article.contact {
+    margin: 3.75rem 1.25rem;
+  }
+
+  .contact-content ul li i {
+    margin-right: 0.625rem;
+    display: inline-block;
+    padding-right: 1.25rem;
+  }
+
+  .contact-content ul {
+    font-size: 1.125rem;
+    margin: 0.9375rem 0;
+  }
+
+
+  /* Form styling */
+  form {
+    margin: 1.25rem 0;
+  }
+
+  form .contact-form {
+    margin: 0.9375rem 0;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  form input[type='text'] {
+    padding: 0.625rem;
+    margin: 0.3125rem 0;
+    font-size: 1rem;
+  }
+
+  form button {
+    float: right;
+  }
+
+  .clearfix::after {
+    content: " ";
+    clear: both;
+    display: table;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  }
+
+  footer ul {
+    display: flex;
+  }
+
+  footer ul li {
+    padding: 0 .3125rem;
+    opacity: 0.7;
+  }
+
+  footer ul li:hover {
+    opacity: 0.5;
+  }
+
+  footer p {
+    margin: .9375rem 0;
+  }
+
+  footer .k-code {
+    text-decoration: underline;
+  }

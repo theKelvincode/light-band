@@ -1,0 +1,10 @@
+@media only screen and (min-width: 1024px) {
+
+body main,
+body article .tour-plan-cover,
+body article .the-contact-cover {
+  max-width: 800px;
+  margin: auto;
+}
+
+} /* end of media query*/

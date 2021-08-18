@@ -1,0 +1,78 @@
+@media only screen and (max-width:767px){
+  
+  /* Nav Styling*/
+  nav {
+    background-color: $primaryColor;
+    color: $wh; 
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+  } 
+
+  nav {
+    .hack {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo {
+      padding: 10px 10px 10px 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #hamBtn {
+      background: none;
+      font-size: 1.35rem;
+      color: $wh;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    #hamBtn:hover,
+    .logo:hover {
+      background-color: $secondaryColor;
+      color: $primaryColor;
+    }
+
+    .mainMenu {
+      display: flex;
+      flex-direction: column;
+      transition: 1s top ease;
+      display: none;
+    }
+
+    .mainMenu li {
+      list-style: none;
+    }
+
+    .mainMenu li a {
+      text-decoration: none;
+      color: $wh;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1.25rem;
+      font-weight: bold;
+      text-transform: lowercase;
+    }
+
+    .mainMenu li a:hover {
+      color: $primaryColor;
+      background-color: $secondaryColor;
+      display: block;
+    }
+
+    .open {
+      display: block;
+    }
+
+    .mainMenu li.active {
+      background-color: $l-gr;
+      color: $primaryColor;
+    }
+  } //end of nav
+  /* End Of header and Nav styling */
+}

@@ -1,0 +1,490 @@
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Global styling */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'ubuntu', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  overflow-y: scroll;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+header img {
+  margin-top: 50px;
+}
+
+button {
+  display: inline-block;
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 0.625rem;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  border-radius: 3.125rem;
+}
+
+button:hover {
+  background-color: gray;
+  color: #000;
+}
+
+button {
+  display: inline-block;
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 0.625rem;
+  font-size: 0.9375rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: gray;
+  color: #000;
+}
+
+main {
+  padding: 3.125rem 0.75rem;
+  background-color: #000;
+  margin: auto;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* the band */
+main #the-band {
+  padding: 2.5rem 0;
+}
+
+main p {
+  text-align: justify;
+  padding-bottom: 1.25rem;
+}
+
+main hgroup h1,
+.tour-plan h1,
+.contact h1 {
+  font-weight: 400;
+  font-size: 30px;
+  padding-bottom: 1.2rem;
+  letter-spacing: 1.0mm;
+  text-align: center;
+}
+
+main hgroup h4,
+.tour-plan h4,
+.contact h4 {
+  font-weight: 400;
+  padding-bottom: 1.2rem;
+  opacity: 0.7;
+  text-align: center;
+}
+
+/* Team Members */
+main .team-members {
+  width: 60%;
+  margin: auto;
+  border-radius: 3px;
+}
+
+main .team-members figure,
+main .team-members figcaption {
+  padding: 0.625rem;
+}
+
+main #hero-c #the-band .team-members img {
+  border-radius: 0.3125rem;
+}
+
+/* Tour plan */
+article.tour-plan {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 3.125rem 0.625rem;
+}
+
+.tour-plan .write-up {
+  margin: 0  0 3.125rem;
+}
+
+.tour-plan .tour-months {
+  background-color: white;
+  color: gray;
+  text-align: left;
+  margin: 1.25rem 0;
+}
+
+.tour-plan .tour-months li {
+  border-bottom: 1px solid gray;
+  padding: 0.625rem;
+}
+
+.tour-plan .tour-months li .sold-out {
+  background-color: yellowgreen;
+  color: #000;
+  padding: 0.125rem 0.3125rem;
+  margin-left: 0.625rem;
+  font-weight: bold;
+}
+
+.tour-plan .tour-months li .number {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 5px 7px;
+  font-weight: bold;
+  color: white;
+  margin-left: 300px;
+}
+
+.tour-plan .city-box {
+  background-color: white;
+  color: #000;
+  margin: 1.875rem auto;
+}
+
+.city-box .desc {
+  text-align: left;
+  padding: 1rem;
+}
+
+.city-box .desc .faint {
+  opacity: 0.8;
+  margin: 0.625rem 0;
+}
+
+.city-box button {
+  margin-top: 0.9375rem;
+}
+
+.city-box img:hover {
+  opacity: 0.5;
+}
+
+/* Contact Styling */
+article.contact {
+  margin: 3.75rem 1.25rem;
+}
+
+.contact-content ul li i {
+  margin-right: 0.625rem;
+  display: inline-block;
+  padding-right: 1.25rem;
+}
+
+.contact-content ul {
+  font-size: 1.125rem;
+  margin: 0.9375rem 0;
+}
+
+/* Form styling */
+form {
+  margin: 1.25rem 0;
+}
+
+form .contact-form {
+  margin: 0.9375rem 0;
+}
+
+form input {
+  width: 100%;
+}
+
+form input[type='text'] {
+  padding: 0.625rem;
+  margin: 0.3125rem 0;
+  font-size: 1rem;
+}
+
+form button {
+  float: right;
+}
+
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+/* Footer */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40vh;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer ul li {
+  padding: 0 .3125rem;
+  opacity: 0.7;
+}
+
+footer ul li:hover {
+  opacity: 0.5;
+}
+
+footer p {
+  margin: .9375rem 0;
+}
+
+footer .k-code {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Nav Styling*/
+  nav {
+    background-color: yellowgreen;
+    color: white;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+  }
+  nav .hack {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .logo {
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  nav #hamBtn {
+    background: none;
+    font-size: 1.35rem;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  nav #hamBtn:hover,
+  nav .logo:hover {
+    background-color: yellowgreen;
+    color: #000;
+  }
+  nav .mainMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: 1s top ease;
+    transition: 1s top ease;
+    display: none;
+  }
+  nav .mainMenu li {
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: lowercase;
+  }
+  nav .mainMenu li a:hover {
+    color: #000;
+    background-color: yellowgreen;
+    display: block;
+  }
+  nav .open {
+    display: block;
+  }
+  nav .mainMenu li.active {
+    background-color: gray;
+    color: #000;
+  }
+  /* End Of header and Nav styling */
+}
+
+@media only screen and (min-width: 768px) {
+  /* nav */
+  nav {
+    background-color: #000;
+    color: white;
+    position: fixed;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    z-index: 10;
+  }
+  nav .logo {
+    padding: 10px 10px 4px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+  }
+  nav #hamBtn {
+    background: none;
+    font-size: 1.35rem;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: none;
+  }
+  nav #hamBtn:hover,
+  nav .logo:hover {
+    background-color: yellowgreen;
+    color: #000;
+  }
+  nav .mainMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .mainMenu li {
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: lowercase;
+  }
+  nav .mainMenu li a:hover {
+    color: #000;
+    background-color: yellowgreen;
+  }
+  nav .mainMenu li.active {
+    background-color: gray;
+    color: #000;
+  }
+  /* Main styling */
+  main #hero-c #the-band .team-members {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  main .team-members img {
+    width: 70%;
+    height: 40vh;
+    margin: auto;
+    border-radius: 3px;
+  }
+  .tour-plan .city-box-cover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+  .tour-plan .city-box-cover .city-box {
+    width: 30%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .tour-plan .tour-months li .number {
+    background-color: #000;
+    border-radius: 50%;
+    padding: 0px 8px;
+    font-weight: bold;
+    color: white;
+    margin-right: 1.25rem;
+  }
+  .tour-plan .tour-months li:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  /* Contact */
+  article.contact {
+    margin: 3.75rem 1.25rem;
+  }
+  .contact-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact-content ul li i {
+    margin-right: 0.625rem;
+    display: inline-block;
+    padding-right: 1.25rem;
+  }
+  .contact-content ul {
+    font-size: 1.125rem;
+    margin: 0.9375rem 0;
+    width: 50%;
+  }
+  .contact-content form {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
+/* end of media query*/
+@media only screen and (min-width: 1024px) {
+  body main,
+  body article .tour-plan-cover,
+  body article .the-contact-cover {
+    max-width: 800px;
+    margin: auto;
+  }
+}
+
+/* end of media query*/
+/*# sourceMappingURL=styles.css.map */
